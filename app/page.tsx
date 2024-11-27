@@ -12,8 +12,6 @@ export default function SignUp() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    // In a real application, you would send this data to your backend
-    // For this example, we'll just store it in localStorage
     localStorage.setItem('currentUser', JSON.stringify({ name, email, role }))
     router.push('/users')
   }
